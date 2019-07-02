@@ -1,0 +1,25 @@
+{
+	"name": "@zoltu/typescript-transformer-append-js-extension",
+	"description": "A TypeScript transformer for use with ttypescript that will append the JS extension to all relative imports that have no extension.",
+	"version": "1.0.0",
+	"repository": {},
+	"license": "Unlicense",
+	"main": "output/index.js",
+	"devDependencies": {
+		"@types/node": "12.0.10",
+		"recursive-fs": "1.1.2",
+		"ts-node": "8.3.0",
+		"ttypescript": "1.5.7",
+		"typescript": "3.5.2"
+	},
+	"files": [
+		"/output/",
+		"/source/",
+		"README.md",
+		"LICENSE"
+	],
+	"scripts": {
+		"build": "tsc",
+		"test": "ttsc -p tests/tsconfig.json"
+	}
+}

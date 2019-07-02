@@ -1,0 +1,22 @@
+{
+	"compilerOptions": {
+		"target": "es2019",
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"rootDir": "source",
+		"outDir": "output",
+		"strict": true,
+		"sourceMap": true,
+		"declaration": true,
+		"noImplicitAny": true,
+		"noImplicitThis": true,
+		"noImplicitReturns": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"esModuleInterop": true,
+		"lib": [ "es2019" ],
+	},
+	"include": [
+		"source/**/*.ts",
+	],
+}
