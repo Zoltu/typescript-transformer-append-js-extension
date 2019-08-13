@@ -6,10 +6,10 @@ const transformer = (_: typescript.Program) => (transformationContext: typescrip
 		if (shouldMutateModuleSpecifier(node)) {
 			if (typescript.isImportDeclaration(node)) {
 				const newModuleSpecifier = typescript.createLiteral(`${node.moduleSpecifier.text}.js`)
-				node = typescript.updateImportDeclaration(node, node.decorators, node.modifiers, node.importClause, newModuleSpecifier)
+				return typescript.updateImportDeclaration(node, node.decorators, node.modifiers, node.importClause, newModuleSpecifier)
 			} else if (typescript.isExportDeclaration(node)) {
 				const newModuleSpecifier = typescript.createLiteral(`${node.moduleSpecifier.text}.js`)
-				node = typescript.updateExportDeclaration(node, node.decorators, node.modifiers, node.exportClause, newModuleSpecifier)
+				return typescript.updateExportDeclaration(node, node.decorators, node.modifiers, node.exportClause, newModuleSpecifier)
 			}
 		}
 
