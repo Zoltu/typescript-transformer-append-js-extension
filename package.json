@@ -6,7 +6,7 @@
 	"license": "Unlicense",
 	"main": "output/index.js",
 	"devDependencies": {
-		"@types/node": "12.6.8",
+		"@types/node": "12.7.1",
 		"ts-node": "8.3.0",
 		"ttypescript": "1.5.7",
 		"typescript": "3.5.3"
