@@ -15,7 +15,7 @@
 		"esModuleInterop": true,
 		"lib": [ "es2019" ],
 		"plugins": [
-			{ "transform": "../source/index.ts", "afterDeclarations": false }
+			{ "transform": "../source/index.ts", "after": true }
 		]
 	},
 	"include": [
