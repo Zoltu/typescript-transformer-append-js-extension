@@ -20,7 +20,7 @@ The hope is that eventually TypeScript will [add support for appending the `.js`
 		"compilerOptions": {
 			"module": "es2015",
 			"plugins": [
-				{ "transform": "@zoltu/typescript-transformer-append-js-extension/output/index.js" }
+				{ "transform": "@zoltu/typescript-transformer-append-js-extension/output/index.js", "after": true }
 			]
 		},
 	}
