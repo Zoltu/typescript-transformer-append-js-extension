@@ -19,6 +19,7 @@
 	],
 	"scripts": {
 		"build": "tsc",
-		"test": "ttsc -p tests/tsconfig.json && echo \"Go look at tests/output/index.js to validate transformer did its job, because I'm too lazy to write a real test.\""
+		"test": "ttsc -p tests/tsconfig.json && echo \"Go look at tests/output/index.js to validate transformer did its job, because I'm too lazy to write a real test.\" && npm run test:module_resolution_node",
+		"test:module_resolution_node": "ttsc -p tests/module_resolution_node/tsconfig.json && diff tests/module_resolution_node/expected/index.js tests/module_resolution_node/output/index.js"
 	}
 }

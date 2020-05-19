@@ -1,0 +1,14 @@
+{
+	"extends": "../tsconfig.json",
+	"compilerOptions": {
+		"moduleResolution": "node",
+		"rootDir": "source",
+		"outDir": "output",
+		"plugins": [
+			{ "transform": "../../source/index.ts", "after": true }
+		]
+	},
+	"include": [
+		"./source/**/*.ts",
+	]
+}

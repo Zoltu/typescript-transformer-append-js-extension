@@ -1,0 +1,15 @@
+import { foo } from "./foo.js";
+import { bar } from './bar.js';
+import { baz as baz1 } from "./.baz/index.js";
+import { baz as baz2 } from "./.baz/index.js";
+import { baz as baz3 } from "./.baz/index.js";
+import { qux } from "./qux/mod.js";
+import { quux } from "./quux/index.js";
+export { Banana } from "./multiple-types.js";
+foo();
+bar();
+baz1();
+baz2();
+baz3();
+qux();
+quux();
