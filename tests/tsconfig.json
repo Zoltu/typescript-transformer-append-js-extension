@@ -2,7 +2,7 @@
 	"compilerOptions": {
 		"target": "es2019",
 		"module": "esnext",
-		"moduleResolution": "classic",
+		"moduleResolution": "node",
 		"rootDir": "source",
 		"outDir": "output",
 		"strict": true,
