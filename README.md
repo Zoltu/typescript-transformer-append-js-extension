@@ -45,3 +45,9 @@ If your project includes files with `.` in the filename (e.g., `my.modules.tests
 	```
 	npx ttsc --project tsconfig-es.json
 	```
+
+## Alternative Solutions
+
+The recommendation from the TypeScript team is to have all of your TS imports be of the form `import ... from './whatever.js'`.  I think this is bad because `whatever.js` is what is being imported at runtime, but it doesn't exist at compile time (the compiler generates it) and it requires specialized editor tooling to navigate to the referenced file plus requires the developer to understand the intricacies of the compiler.  This would be similar to C requiring that you import `foo.o` instead of `foo.h` (or something akin to that).
+
+However, if you have an existing project that has no extensions and you want to follow Microsoft's recommendation then you can use a tool like https://github.com/milahu/random/blob/master/javascript/typescript-autofix-js-import-extension.js to do a one-time update of everything in your project in a way that ensures you only hit the imports that TypeScript cares about.
