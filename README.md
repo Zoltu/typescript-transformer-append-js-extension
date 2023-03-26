@@ -1,3 +1,8 @@
+# **DEPRECATED**
+I wrote this in hopes that I could continue writing reasonable looking TypeScript until the TypeScript devs came around to seeing reason and added support for import rewriting.  Unfortunately, it appears they are standing their ground firmly and are unlikely to ever change their position.  Along with that, changes to tsc have caused this plugin to stop working and updating it is a non-trivial task.
+
+For these reasons, I have personally stopped using this project and resorted to just adding an (incorrect) `.js` extension to all of my `.ts` imports.  I won't be updating this project anymore, but it may be worthwhile to look at the forks of this project to see if someone is maintaining a fork.
+
 # Abstract
 Teach the TypeScript compiler to emit JavaScript files that can be run natively in the browser using es2015 module syntax.
 
